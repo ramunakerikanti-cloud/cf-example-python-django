@@ -19,6 +19,10 @@ steps:
     working_directory: ./
     tag: master
     dockerfile: Dockerfile
+  Approve:
+    type: pending-approval
+    title: Wait for approval
+
   test_my_image:
      title: Running unit tests
      stage: test
